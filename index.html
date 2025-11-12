@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microprocessor Course - Pink Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 105, 180, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .table-container {
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #ffb3d9 0%, #ff8cc5 100%);
+        }
+
+        th {
+            padding: 18px;
+            text-align: left;
+            font-weight: 600;
+            color: #d81b60;
+            font-size: 1.1rem;
+            border-bottom: 3px solid #ff69b4;
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #ffe0f0;
+        }
+
+        tbody tr:hover {
+            background: linear-gradient(90deg, #fff0f8 0%, #ffe8f4 100%);
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(255, 105, 180, 0.15);
+        }
+
+        td {
+            padding: 16px 18px;
+            color: #555;
+        }
+
+        .icon {
+            color: #ff69b4;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .unit-badge {
+            background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
+        }
+
+        .question-cell {
+            font-weight: 500;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Microprocessor & Interfacing Course</h1>
+            <p>Complete Topic List by Units</p>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question / Topic</th>
+                        <th>Unit</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin Diagram and architecture of 8085</td>
+                        <td><span class="unit-badge">unit -1</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Addressing modes 8085</td>
+                        <td><span class="unit-badge">unit - 1</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Opcode fetch machine of 8085</td>
+                        <td><span class="unit-badge">unit - 1</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Programs</td>
+                        <td><span class="unit-badge">unit - 1</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and architecture of 8259 Programmable interrupt controller</td>
+                        <td><span class="unit-badge">unit -2</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and architecture of 8237 Programmable DMA Controller</td>
+                        <td><span class="unit-badge">unit - 2</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Software and Hardware of 8085</td>
+                        <td><span class="unit-badge">unit - 2</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and Architecture of 8253</td>
+                        <td><span class="unit-badge">unit - 2</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and Architecture of 8279 Keyboard / Display Controller</td>
+                        <td><span class="unit-badge">unit - 3</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin Diagram and Architecture of 8251 USART</td>
+                        <td><span class="unit-badge">unit - 3</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin Diagram and Architecture of 8255</td>
+                        <td><span class="unit-badge">unit - 3</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Interfacing of 8279 with 8085</td>
+                        <td><span class="unit-badge">unit - 3</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and Architecture of 8086</td>
+                        <td><span class="unit-badge">unit - 4</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Addressing modes of 8086</td>
+                        <td><span class="unit-badge">unit - 4</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Pin diagram and Architecture of 8051</td>
+                        <td><span class="unit-badge">unit - 5</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Demonstrate the memory and Input Output Interfacing for 8051</td>
+                        <td><span class="unit-badge">unit - 5</span></td>
+                    </tr>
+                    <tr>
+                        <td class="question-cell"><span class="icon">📄</span>Addressing modes of 8051</td>
+                        <td><span class="unit-badge">unit - 5</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
